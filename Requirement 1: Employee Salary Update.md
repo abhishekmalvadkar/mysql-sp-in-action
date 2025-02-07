@@ -22,6 +22,9 @@ INSERT INTO employees (name, salary) VALUES
 ('Charlie Davis', 190000);
 ```
 
+<details>
+  <summary>Click to show/hide solution</summary>
+
 ```sql
 drop procedure if exists sp_update_employee_salary;
 
@@ -61,6 +64,7 @@ end $$
 
 delimiter ;
 ```
+</details>
 
 ```sql
 call sp_update_employee_salary(1, 10);
@@ -82,6 +86,10 @@ CREATE TABLE salary_log (
 ```
 
 ### Updated stored procedure
+
+<details>
+  <summary>Click to show/hide solution</summary>
+	
 ```sql
 drop procedure if exists sp_update_employee_salary;
 
@@ -129,3 +137,4 @@ end $$
 
 delimiter ;
 ```
+</details>
